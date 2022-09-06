@@ -1,10 +1,12 @@
 package com.mycompany.cpu;
-
+/**
+ * Classe de Instruções, serve para criar o construtor, pode tambem ser um vetor String de 3 posições.
+ * @author Luan Diniz MR
+ */
 public class Inst {
-    private String operador;
-    private int op1,op2;
+    private String operador, op1,op2;
 
-    public Inst(String operador, int op1, int op2) {
+    public Inst(String operador, String op1, String op2) {
         this.operador = operador;
         this.op1 = op1;
         this.op2 = op2;
@@ -14,11 +16,11 @@ public class Inst {
         return operador;
     }
 
-    public int getOp1() {
+    public String getOp1() {
         return op1;
     }
 
-    public int getOp2() {
+    public String getOp2() {
         return op2;
     }
     
